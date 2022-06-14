@@ -19,7 +19,7 @@ const ctof = function(numberToConvert) {
 }
 
 //declare solution variable assign value of calculation
-let solution = (numberToConvert *(5/9)) + 32;
+let solution = (numberToConvert *(9/5)) + 32;
 //round variable to one decimal place
 solution = Number(solution.toFixed(1));
 //return value of conversion
