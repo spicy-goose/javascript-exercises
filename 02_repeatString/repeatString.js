@@ -7,9 +7,9 @@ const repeatString = function(stringToRepeat, numberOfRepeats) {
         return 'ERROR'
     }
     //validate numOfRepeats is of type integer
-    if (!Number.isInteger(numberOfRepeats)){
+    if (!(Number.isInteger(numberOfRepeats) && numberOfRepeats >= 0)){
         //if not, return error string
-        return 'Error'
+        return 'ERROR'
     }
     //declare result string as empty string
     let resultString = '';
