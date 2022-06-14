@@ -9,7 +9,7 @@ const reverseString = function(stringToReverse) {
     let solutionString = '';
 
     //iterate over the length of the string from length of string to 0
-    for (let i = stringToReverse.length-1; i > 0; --i){
+    for (let i = stringToReverse.length-1; i >= 0; --i){
         //concatenate the current character to the solution string
         solutionString += stringToReverse[i];
     }
