@@ -1,13 +1,13 @@
 const repeatString = function(stringToRepeat, numberOfRepeats) {
 
     //validate string is of string type
-    if (typeOf(stringToRepeat) !== 'string'){
+    if (typeof(stringToRepeat) !== 'string'){
 
         //if not, return error string
         return 'ERROR'
     }
     //validate numOfRepeats is of type integer
-    if (!numberOfRepeats.isInteger()){
+    if (!Number.isInteger(numberOfRepeats)){
         //if not, return error string
         return 'Error'
     }
@@ -15,7 +15,7 @@ const repeatString = function(stringToRepeat, numberOfRepeats) {
     let resultString = '';
 
     //iterate from 0 to numberOfRepeats
-    for (let i = 0; i < stringToRepeat; ++i){
+    for (let i = 0; i < numberOfRepeats; ++i){
 
         //concatenate new iteration of stringToRepeat to result string variable
         resultString += stringToRepeat;
